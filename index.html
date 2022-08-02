@@ -1,158 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio Theme</title>
+    <meta name="description" content="An HTML portfolio theme built" />
+    <meta name="keywords" content=" portfolio, theme, bootstrap, grid" />
+    <meta name="author" content="Alikerock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="utf-8">
-	<title>Portfolio Theme</title>
-	<meta name="description" content="An HTML portfolio theme built">
-	<meta name="keywords" content=" portfolio, theme, bootstrap, grid">
-	<meta name="author" content="Alikerock">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" />
 
-	<link rel="stylesheet" href="css/styles.css">
-	
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-</head>
-<body>
-	
-<header>
-	<div class="container">
-		<h1 class="logo">
-			<a href="#">LOGO</a>
-		</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+    <!-- include jQuery & Cycle2 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">
+          <a href="#">LOGO</a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<div class="banner">
-	
-	<ul class="banner_list">
-		
-		<li class="slide1">
-			
-			<h2>Project Title</h2>
-			<div class="slide_c">
-				
-				<p>This is a small description. Keep it simple and to the point</p>
-				<a href="#" class="btn">See Details</a>
-		
-			</div>
-		
-		</li>
-		
-		<li class="slide2">
-			
-			<h2>Project Title</h2>
-			<div class="slide_c">
-				
-				<p>This is a small description. Keep it simple and to the point</p>
-				<a href="#" class="btn">See Details</a>
-		
-			</div>
-		
-		</li>
-	
-		<li class="slide3">
-			
-			<h2>Project Title</h2>
-			<div class="slide_c">
-				
-				<p>This is a small description. Keep it simple and to the point</p>
-				<a href="#" class="btn">See Details</a>
-		
-			</div>
-		
-		</li>
-	
-	</ul>
+    <div class="banner">
+      <ul
+        class="banner_list cycle-slideshow"
+        data-cycle-fx="scrollHorz"
+        data-cycle-timeout="0"
+        data-cycle-slides=".slide"
+        data-cycle-prev=".banner .prev"
+        data-cycle-next=".banner .next"
+        data-cycle-pager=".banner .pager"
+      >
+        <li class="slide1 slide">
+          <h2>Project Title</h2>
+          <div class="slide_c">
+            <p>This is a small description. Keep it simple and to the point</p>
+            <a href="#" class="btn">See Details</a>
+          </div>
+        </li>
 
-	<p class="controls">
-		<a href="#" class="prev"><i class='fa fa-chevron-left' aria-hidden='true'></i></a>
-		<a href="#" class="next"><i class='fa fa-chevron-right' aria-hidden='true'></i></a>
-	</p>
+        <li class="slide2 slide">
+          <h2>Project Title</h2>
+          <div class="slide_c">
+            <p>This is a small description. Keep it simple and to the point</p>
+            <a href="#" class="btn">See Details</a>
+          </div>
+        </li>
 
-</div> <!-- Banner -->
+        <li class="slide3 slide">
+          <h2>Project Title</h2>
+          <div class="slide_c">
+            <p>This is a small description. Keep it simple and to the point</p>
+            <a href="#" class="btn">See Details</a>
+          </div>
+        </li>
+      </ul>
 
-<div class="main_c container">
-	<h3>Recent Project</h3>
-	<p><a href="#">See all Project</a></p>
-	<ul class="project_list">
-		<li>
-			<img src="../images/content1.png" alt="content1">
-			<div class="hover_c">
-				<h4>This is the project name</h4>
-				<a href="#">click for details</a>
-			</div>
-		</li>
-		<li>
-			<img src="../images/content2.png" alt="content1">
-			<div class="hover_c">
-				<h4>This is the project name</h4>
-				<a href="#">click for details</a>
-			</div>
-		</li>
-		<li>
-			<img src="../images/content3.png" alt="content1">
-			<div class="hover_c">
-				<h4>This is the project name</h4>
-				<a href="#">click for details</a>
-			</div>
-		</li>
-		<li>
-			<img src="../images/content4.png" alt="content1">
-			<div class="hover_c">
-				<h4>This is the project name</h4>
-				<a href="#">click for details</a>
-			</div>
-		</li>
-		<li>
-			<img src="../images/content5.png" alt="content1">
-			<div class="hover_c">
-				<h4>This is the project name</h4>
-				<a href="#">click for details</a>
-			</div>
-		</li>
-		<li>
-			<img src="../images/content6.png" alt="content1">
-			<div class="hover_c">
-				<h4>This is the project name</h4>
-				<a href="#">click for details</a>
-			</div>
-		</li>
-	</ul>
-</div><!-- Main_content -->
+      <p class="controls">
+        <a href="#" class="prev"
+          ><i class="fa fa-chevron-left" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="next"
+          ><i class="fa fa-chevron-right" aria-hidden="true"></i
+        ></a>
+      </p>
+      <p class="pager"></p>
+    </div>
+    <!-- Banner -->
 
-<footer>
-	<i class='fa fa-envelope' aria-hidden='true'></i>
-	<div class="subscribe">
-		<p>Wanna see my latest photos? Enter your email below and I'll send you one email a month with the latest updates.</p>
-		<form action="#" method="post">
-			<input type="email" name="e-mail" placeholder="Your e-mail address">
-			<!-- <button type="submit" class="btn">Subscribe</button> -->
-			<!-- <button type="submit" class="btn">
+    <div class="main_c container">
+      <h3>Recent Project</h3>
+      <p><a href="#">See all Project</a></p>
+      <ul class="project_list">
+        <li>
+          <img src="../images/content1.png" alt="content1" />
+          <div class="hover_c">
+            <h4>This is the project name</h4>
+            <a href="#">click for details</a>
+          </div>
+        </li>
+        <li>
+          <img src="../images/content2.png" alt="content1" />
+          <div class="hover_c">
+            <h4>This is the project name</h4>
+            <a href="#">click for details</a>
+          </div>
+        </li>
+        <li>
+          <img src="../images/content3.png" alt="content1" />
+          <div class="hover_c">
+            <h4>This is the project name</h4>
+            <a href="#">click for details</a>
+          </div>
+        </li>
+        <li>
+          <img src="../images/content4.png" alt="content1" />
+          <div class="hover_c">
+            <h4>This is the project name</h4>
+            <a href="#">click for details</a>
+          </div>
+        </li>
+        <li>
+          <img src="../images/content5.png" alt="content1" />
+          <div class="hover_c">
+            <h4>This is the project name</h4>
+            <a href="#">click for details</a>
+          </div>
+        </li>
+        <li>
+          <img src="../images/content6.png" alt="content1" />
+          <div class="hover_c">
+            <h4>This is the project name</h4>
+            <a href="#">click for details</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Main_content -->
+
+    <footer>
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <div class="subscribe">
+        <p>
+          Wanna see my latest photos? Enter your email below and I'll send you
+          one email a month with the latest updates.
+        </p>
+        <form action="#" method="post">
+          <input type="email" name="e-mail" placeholder="Your e-mail address" />
+          <!-- <button type="submit" class="btn">Subscribe</button> -->
+          <!-- <button type="submit" class="btn">
 				<img src="" alt="">
 			</button> -->
-			<!-- <input type="image" src="" alt="" class="btn"> -->
-			<input type="submit" value="Subscribe" class="btn">
-		</form>
-	</div>
-	<p class="share">
-		<a href="#"><i class='fa fa-twitter' aria-hidden='true'></i></a>
-		<a href="#"><i class='fa fa-facebook-f' aria-hidden='true'></i></a>
-	</p>
-	<p class="copy">
-		&copy; 2022 portfolio theme.
-	</p>
-</footer>
-	
-
-
-</body>
+          <!-- <input type="image" src="" alt="" class="btn"> -->
+          <input type="submit" value="Subscribe" class="btn" />
+        </form>
+      </div>
+      <p class="share">
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+      </p>
+      <p class="copy">&copy; 2022 portfolio theme.</p>
+    </footer>
+  </body>
 </html>
