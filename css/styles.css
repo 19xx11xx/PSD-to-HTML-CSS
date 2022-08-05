@@ -1,6 +1,6 @@
 @import url(reset.css);
 
-/* 공통영역 */
+/* 전체 공통영역 */
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -30,6 +30,14 @@
   color: #fff;
   cursor: pointer;
   /* transition: 0.4s; */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #eaeaea;
+  margin: 27px 0;
+  /* 또다른 방법 : border-top(bottom) 1px solid #eaeaea; */
 }
 /* TYPOGRAPHY */
 
@@ -274,7 +282,6 @@ nav ul li a {
 /* ******** Footer ******** */
 footer {
   text-align: center;
-  margin-top: 738px;
 }
 
 .subscribe {
@@ -321,6 +328,7 @@ footer .share {
   margin: 54px 0;
 }
 
+/* sns icon & copyright */
 footer .share a {
   color: #ff6604;
   font-size: 27px;
@@ -328,7 +336,7 @@ footer .share a {
 }
 
 footer .share a:hover {
-  color: #ebebeb;
+  color: #333538;
 }
 
 footer .copy {
@@ -338,8 +346,84 @@ footer .copy {
 footer .copy {
   margin-bottom: 50px;
 }
-/* sns icon & copyright */
+/* SubPage 공통영역 */
+.page_banner {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
 
-/* ******** About ******** */
+.page_banner h2 {
+  position: absolute;
+  left: 50%;
+  bottom: -27px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.fancy-box.bgc2 {
+  background: rgba(89, 89, 89, 0.9);
+}
+
+.subpage > p {
+  width: 780px;
+  margin: 0 auto 27px;
+}
 
 /* ******** Portfolio ******** */
+.page_banner.portfolio {
+  background-image: url(../images/about.png);
+}
+
+.subpage > h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #989898;
+  margin-top: 27px;
+  text-align: center;
+}
+
+.subpage .content_tt {
+  font-weight: bold;
+  margin: 16px 0 27px;
+}
+
+.subpage .portfolio_controls {
+  width: 100%;
+}
+
+.portfolio_controls .prev_project {
+  float: left;
+}
+.portfolio_controls .next_project {
+  float: right;
+}
+
+.portfolio_slider img {
+  width: 100%;
+}
+
+.portfolio_slider .controls a.prev {
+  left: 50px;
+  margin-left: 0;
+}
+
+.portfolio_slider .controls a.next {
+  left: 100%;
+  transform: translate(-100%, -50%);
+  margin-left: -50px;
+}
+
+/* ******** About ******** */
+.page_banner.about {
+  background-image: url(../images/portfolio.png);
+}
+
+.subpage.container p:last-child a {
+  margin-left: 2px;
+}
